@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website </title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="active">
+        <a href="#"class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav>
+            <a href="#"class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- bars background -->
+     <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+     </div>
+     <!-- header section -->
+    <section class="Home active" id="home">
+        <div class="home-detail">
+            <h1>Wardah</h1>
+            <h2>Im a 
+                <span style="--i:4;" data-text="Final Year Student">Final Year Student</span>
+                <span style="--i:3;" data-text="Player">Player</span>
+                <span style="--i:2;" data-text="Crocheter">Crocheter</span>
+                <span style="--i:1;" data-text="Teacher">Teacher</span>
+            </h2>
+            <p>I am passionate student currently pursuing a
+             bachelor of Computer Application(BCA) degree</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <!-- HTML -->
+          <a href="Contact" class="contact-btn">Contact Me</a>
+<!-- CSS -->
+<style>
+.contact-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    transition: .5s;
+}
+
+.contact-btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: none;
+}
+</style>
+
+                <div class="sci">
+                    <!-- Add this in the <head> of your HTML to use Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<!-- Icons section -->
+<div class="contact-icons">
+  <i class="fas fa-phone"></i>
+  <i class="fas fa-envelope"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-youtube"></i>
+</div>
+
+<!-- CSS -->
+<style>
+.contact-icons {
+  display: flex;
+  gap: 20px; /* space between icons */
+  font-size: 24px; /* icon size */
+  color: #7cf03d;
+}
+
+.contact-icons i:hover {
+  color: var(--bg-color);
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+</style>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="profile.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- About section -->
+    <section class="About" id="about">
+         <h2 class="heading">About <span>Me</span></h2>
+            <div class="About-container">
+                <div class="About-box">
+                    <h3>Introduction</h3>
+                    <p>I am Wardah currently pursuing my undergraduate degree in Bachelor of Computer Application and completed 1st and 2nd with distinction.I come from a Background that has taught me the importance of hardwork, empathy and dedication </p>
+                 </div>
+
+            <div class="About-box">
+                <h3>Background</h3>
+                <p>I never really thought about gaining technical knowledge before,but once i got opportunity ,my interest began to grow .Step by step ,I started exploring more and found joy in learning and improving myself. This has motivated me to keep updated with computer languages</p>
+            </div>
+
+            <div class="About-box">
+                <h3>Aim</h3>
+                <p>My aim is to become a skilled professional who can use technology to make life easier.</p>
+            </div>
+
+            <div class="About-box">
+                <h3>Experience</h3>
+                <p># Part time teaching for 2 months primary Student in holidays</p>
+                <p># Crochet</p>
+                <p># Craft Classes in summer camp for 1 month</p>
+            </div>
+
+            <div class="About-box">
+                <h3>Achievement</h3>
+                <p>Certifications of appreciation in Sports, Art and craft, cooking competition, English calligraphy</p>
+            </div>
+
+            <div class="About-box">
+                <h3>Hobbies</h3>
+                <p># Crochet</p>
+                <p># Cooking</p>
+                <p># Art</p>
+            </div>
+       </div>
+
+       <style>
+/* Add this CSS to your existing styles */
+.About-box {
+    transition: all 0.3s ease;
+}
+
+.pop-animation:hover {
+    animation: pop 0.5s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Optional: Add staggered animation for page load */
+.About-container {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered animation for individual boxes */
+.About-box:nth-child(1) { animation-delay: 0.1s; }
+.About-box:nth-child(2) { animation-delay: 0.2s; }
+.About-box:nth-child(3) { animation-delay: 0.3s; }
+.About-box:nth-child(4) { animation-delay: 0.4s; }
+.About-box:nth-child(5) { animation-delay: 0.5s; }
+.About-box:nth-child(6) { animation-delay: 0.6s; }
+</style>
+
+
+    </section>
+      <!-- Skills section -->
+    <section class="Skills" id="skills">
+        <div class="Skills-container">
+            <div class="Skills-box">
+                <h2>My Skills</h2>
+                <p class="desc">I can work well with others and manage y task efficiently.</p>
+                <button class="Skills-btn">Creative Skills</button>
+                <button class="Skills-btn">About me</button>
+            </div>
+
+            <div class="Skills-box">
+        
+        <div class="Skills-detail Creative Skills">
+                    <h2 class="heading">My<span>Creative Skills</span></h2>
+                    <p class="desc">A creative mind not only thinks differently but also inspires others to see differently.</p>
+                    <div class="Skills-list">
+                        <div class="Skills-item">
+                            <p class="year">2016-17 & 2017-2018</p>
+                            <h3>Crochet Designing</h3>
+                            <p class="degree">Offline Course</p>
+                            <p>It is an art of creating patterns or decorative items using yarn and a crochet hook by interlocking loops.</p>
+                        </div>
+                        <div class="Skills-item">
+                            <p class="year">2022-23</p>
+                            <h3>Teaching</h3>
+                            <p class="degree">At School</p>
+                            <p>Teacher is a person who educates, guides and inspires students by sharing knowledge,skills and values.</p>
+                        </div>
+                        <div class="Skills-item">
+                            <p class="year">2017-18</p>
+                            <h3>Throwball Player</h3>
+                            <p class="degree">In primary school</p>
+                            <p>It is a team sport where players throw a ball over a net to score points by making it land in the opponent's court.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Skills-detail about">
+                    <h2 class="heading">About<span>me</span></h2>
+                    <p class="desc">I am a creative and motivated individual with skills in crochet designing, calligraphy, teaching and sports.I work well with teams and solve problem effectively.</p>
+                    <div class="Skills-list">
+                        <div class="Skills-item">
+                            <p>Name<span>Wardah Haji Faqqui</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Gender<span>Female</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Age<span>20</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Status<span>Student</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>City<span>Bhatkal</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Nationality<span>Indian</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Full Time<span>Available</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Freelance<span>Available</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Phone<span>(+91) 9880354049</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Email<span>afnansyed709@gmail.com</span></p>
+                        </div>
+                        <div class="Skills-item">
+                            <p>Language<span>English,Basic kannada,Urdu and basic hindi</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Education section -->
+    <section class="Education" id="education">
+        <h2 class="heading">Education <span>Journey</span></h2>
+        <div class="Education-container" id="main">
+            <div class="Education-box">
+                
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synchronized Text & Image Carousel</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f9;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+    background: black;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  .text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
+
+  .text-section h2 {
+    margin-bottom: 10px;
+    color: #7cfe3d;
+  }
+
+  .text-section p {
+    color: white;
+    line-height: 1.5;
+  }
+
+  .carousel {
+    flex: 6;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 0.6s ease;
+  }
+
+  .carousel img.active {
+    display: block;
+  }
+
+  .buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+  }
+
+  .buttons button {
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+
+  .buttons button:hover {
+    background: rgba(0,0,0,0.8);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left Text -->
+  <div class="text-section" id="text-section">
+    <h2 id="title">Mountains</h2>
+    <p id="desc">Silent giants touching the clouds — where the earth whispers to the sky.</p>
+  </div>
+
+  <!-- Right Carousel -->
+  <div class="carousel">
+    <img src="1 school.jpg" class="active" alt="Primary school">
+    <img src="school 2.jpg" alt="Secondary school">
+    <img src="school3.jpg" alt="PU College">
+    <img src="school 4.jpg" alt="Degree College">
+    <div class="buttons">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const texts = [
+    {
+      title: "Primary school",
+      desc: "This is the school which provides the best academic environment and where i spent my most important part of childhood."
+    },
+    {
+      title: "Secondary school",
+      desc: "This is a school where i first time interacted to my own traditional environment and i feel comfortable rather than the previous school. I learned urdu language in this school."
+    },
+    {
+      title: "PU College",
+      desc: "In this college ,I took arts stream by taking thought of becoming lawyer. Other than that there was a lecturer who has put effort to improve my urdu language at high level"
+    },
+    {
+      title: "Degree College",
+      desc: "Since i was from arts background and i feel that nothing can be obtained in the future with this background.Then I got the opportunity to gain knowledge of computer ,which will be very helpful futher."
+    }
+  ];
+
+  const images = document.querySelectorAll('.carousel img');
+  const title = document.getElementById('title');
+  const desc = document.getElementById('desc');
+  let index = 0;
+
+  function showSlide(i) {
+    images.forEach((img, idx) => img.classList.toggle('active', idx === i));
+    title.textContent = texts[i].title;
+    desc.textContent = texts[i].desc;
+  }
+
+  document.getElementById('next').addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    showSlide(index);
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    showSlide(index);
+  });
+
+  // Optional auto-slide every 5 seconds
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    showSlide(index);
+  }, 5000);
+</script>
+
+</body>
+</html>
+            </div>
+        </div>
+    </section>
+
+       <!-- Contact section -->
+    <section class="Contact" id="contact">
+        <div class="Contact-container">
+            <div class="Contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">Interested in working with me?Drop me a message- I'll get back to you soon.</p>
+                <div class="Contact-detail">
+                    <div class="detail">
+                      <div class="contact-icons">
+                          <i class="fas fa-phone"></i>
+                          <p>Phone</p>
+                          <p>(+91) 9880354049</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="Contact-detail">
+                    <div class="detail">
+                      <div class="contact-icons">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email</p>
+                        <p>afnansyed709@gmail.com</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="Contact-detail">
+                    <div class="detail">
+                      <div class="contact-icons">
+                        <i class="fas fa-location-dot"></i>
+                        <p>Address</p>
+                        <p>Azad nagar 6th cross ,Bhatkal 581 320.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+     <!-- custom js -->
+      <script src="js/script.js"></script>
+</body>
+</html>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const boxes = document.querySelectorAll(".About-container");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // run only once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  boxes.forEach(box => {
+    box.classList.add("pop");
+    observer.observe(box);
+  });
+});
+</script>
